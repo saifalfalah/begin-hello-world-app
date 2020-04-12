@@ -1,6 +1,8 @@
 exports.handler = async function http(req) {
   try {
     console.log("Begin API called");
+    console.log(req.path);
+    console.log(req.httpMethod);
     throw new error("Oops");
     return {
       headers: {
