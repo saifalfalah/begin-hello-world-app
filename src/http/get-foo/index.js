@@ -3,6 +3,7 @@ exports.handler = async function http(req) {
     console.log("Begin API called");
     console.log(req.path);
     console.log(req.httpMethod);
+    console.log(trueOrFalse());
     throw new error("Oops");
     return {
       headers: {
@@ -21,4 +22,8 @@ exports.handler = async function http(req) {
       }),
     };
   }
+};
+
+const trueOrFalse = () => {
+  return true;
 };
