@@ -1,6 +1,7 @@
 exports.handler = async function http(req) {
   try {
     console.log("Begin API called");
+    throw new error("Oops");
     return {
       headers: {
         "content-type": "application/json; charset=utf8",
